@@ -21,20 +21,20 @@
 <body>
     <div class="container">
         <div id="left-side">
-            <div class="current-price">
+            <div class="current-price-holder">
                 <label for="">Pradinė kaina:</label>
-                <input type="text" placeholder="Pradinė kaina">
+                <input type="text" placeholder="Pradinė kaina" id="price" class="correct-input">
                 <p class="error">Klaida: <span id="price-error"></span></p>
             </div>
-            <div class="percent">
+            <div class="percent-holder">
                 <label for="">Pokytis procentais:</label>
-                <input type="text" placeholder="Procentai">
+                <input type="text" placeholder="Procentai" id="percent" class="wrong-input">
                 <p class="error">Klaida: <span id="percent-error"></span></p>
             </div>
             <div class="change-direction">
                 <label for="">Kainos keitimas:</label>
                 <select>
-                    <option value="" disabled selected>Pasirinkite</option>
+                    <option value="" disabled selected id="direction">Pasirinkite</option>
                     <option value="minus">Atpiginti</option>
                     <option value="plus">Pabranginti</option>
                 </select>

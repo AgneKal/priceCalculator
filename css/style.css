@@ -44,7 +44,14 @@ input {
     color: #EDE7DC;
     border-radius: 10px;
     padding: 8px 16px;
+}
 
+.correct-input {
+    background-color: darkgreen;
+}
+
+.wrong-input {
+    background-color: darkred;
 }
 
 input::placeholder {
@@ -57,7 +64,7 @@ input:focus {
     outline: none;
 }
 
-.current-price{
+.current-price-holder {
     display: flex;
     flex-direction: column; 
     width: 80%;
@@ -65,10 +72,7 @@ input:focus {
 
 label {
     margin-top: 15px;
-
-
 }
-
 
 .error{
     visibility: visible;
@@ -79,6 +83,12 @@ label {
 .error > span {
     color: red;
     font-size: 16px;
+}
+
+.percent-holder {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
 }
 
 .change-direction {
@@ -93,19 +103,12 @@ select {
     color: #EDE7DC;
     background-color: #594E48;
     padding: 8px 16px;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
 }
 
 option {
     font-size: 24px;
     color: #EDE7DC;
-}
-
-.percent {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
 }
 
 .btn {
