@@ -1,4 +1,4 @@
-# Salary list
+# Price calculator
 
 _website design project_
 
