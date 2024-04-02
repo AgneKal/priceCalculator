@@ -24,25 +24,26 @@
             <div class="current-price">
                 <label for="">Pradinė kaina:</label>
                 <input type="text" placeholder="Pradinė kaina">
-                <p class="error"></p>
-            </div>
-            <div class="change">
-                <label for="">Kainos keitimas:</label>
-                <select>
-                    <option value="+">Pabranginti</option>
-                    <option value="-">Atpiginti</option>
-                </select>
-                <p class="error"></p>
+                <p class="error">Klaida: <span id="price-error"></span></p>
             </div>
             <div class="percent">
-                <label for="">Procentai</label>
+                <label for="">Pokytis procentais:</label>
                 <input type="text" placeholder="Procentai">
-                <p class="error"></p>
+                <p class="error">Klaida: <span id="percent-error"></span></p>
             </div>
-            <button class="btn">Skaičiuoti</button>
+            <div class="change-direction">
+                <label for="">Kainos keitimas:</label>
+                <select>
+                    <option value="" disabled selected>Pasirinkite</option>
+                    <option value="minus">Atpiginti</option>
+                    <option value="plus">Pabranginti</option>
+                </select>
+                <p class="error">Klaida: <span id="change-error"></span></p>
+            </div>
+            <button class="btn disabled">Skaičiuoti</button>
         </div>
         <div id="right-side">
-            <div class="new-price">Nauja kaina</div>
+            <div class="new-price-holder">Nauja kaina: <span id="new-price"></span></div>
         </div>
 
     </div>

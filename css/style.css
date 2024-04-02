@@ -10,21 +10,51 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     display: flex;
     justify-content: center;
+    background-image: url(../Grey_Set7_12.webp);
+    background-repeat: none;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 .container {
-background-color: beige;
     width: 80%;
+    margin-top: 20px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+
 }
     
 #left-side{
-    background-color: aquamarine;
-    width: 70%;
+    background-color: #dcd2ccca;
+    width: 68%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    border: 0 solid;
+    border-radius: 20px;
+    font-size: 24px;
+}
+
+input {
+    font-size: 24px;
+    background-color: #594E48;
+    border: 1px solid #9c938e;
+    color: #EDE7DC;
+    border-radius: 10px;
+    padding: 8px 16px;
+
+}
+
+input::placeholder {
+    font-size: 24px;
+    color: white;
+    color: #EDE7DC;
+}
+
+input:focus {
+    outline: none;
 }
 
 .current-price{
@@ -33,22 +63,43 @@ background-color: beige;
     width: 80%;
 }
 
-label{
+label {
+    margin-top: 15px;
+
 
 }
+
 
 .error{
-
+    visibility: visible;
+    font-size: 16px;
+    color: red;
 }
 
-.change {
+.error > span {
+    color: red;
+    font-size: 16px;
+}
+
+.change-direction {
     display: flex;
     flex-direction: column;
     width: 80%;
 }
 
-option {
+select {
+    margin-right: auto;
+    font-size: 24px;
+    color: #EDE7DC;
+    background-color: #594E48;
+    padding: 8px 16px;
+    border-radius: 10px;
+    
+}
 
+option {
+    font-size: 24px;
+    color: #EDE7DC;
 }
 
 .percent {
@@ -58,20 +109,46 @@ option {
 }
 
 .btn {
-    background-color: #002EF4;
+    background-color: #594E48;
     margin: 20px auto;
-    border: 0 solid #002EF4;
+    border: 0 solid;
     border-radius: 15px;
     font-size: 20px;
     padding: 8px 16px;
-    color: #FDD806;
+    color: #EDE7DC;
+}
+
+.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
 }
 
 #right-side {
-    background-color: bisque;
+    background-color: #dcd2ccca;
     width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0 solid;
+    border-radius: 20px;
 }
 
-.new-price {
+.new-price-holder {
+    font-size: 30px;
+    color: #594E48;
+    display: flex;
+    flex-direction: column;
+}
 
+.new-price-down {
+    color: darkgreen;
+    align-self: center;
+    font-size: 40px;
+}
+
+.new-price-up {
+    color: darkred;
+    align-self: center;
+    font-size: 40px;
 }
