@@ -74,7 +74,9 @@ label {
     margin-top: 15px;
 }
 
-.error{
+#errorPR, 
+#errorPC, 
+#errorCH{
     visibility: visible;
     font-size: 16px;
     color: red;
@@ -111,7 +113,7 @@ option {
     color: #EDE7DC;
 }
 
-.btn {
+#btn {
     background-color: #594E48;
     margin: 20px auto;
     border: 0 solid;
@@ -121,7 +123,8 @@ option {
     color: #EDE7DC;
 }
 
-.disabled {
+#btn:disabled,
+#btn[disabled]{
     opacity: 0.6;
     cursor: not-allowed;
 }
